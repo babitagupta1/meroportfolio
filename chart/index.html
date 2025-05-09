@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Babita Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      font-size: 1.2rem;
+      color: #9b59b6;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .left {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .leftsection {
+      font-size: 2.5rem;
+      padding: 20px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: 2px solid white;
+      border-radius: 6px;
+      background-color: #442f4d;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .rightsection img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+
+    .purple, #element {
+      color: #9b59b6;
+    }
+
+    hr {
+      border: 0;
+      background-color: #9b59b6;
+      height: 1.2px;
+      margin: 60px 84px;
+    }
+
+    .secondsection {
+      max-width: 90vw;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    .secondsection h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 40px;
+    }
+
+    .vertical {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+      text-align: center;
+    }
+
+    .vertical img.top {
+      width: 60px;
+      height: 60px;
+      background: red;
+      margin-bottom: 10px;
+    }
+
+    .vertical-title {
+      font-size: 20px;
+      color: #9b59b6;
+      margin-bottom: 8px;
+    }
+
+    .vertical-dis {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    footer {
+      background-color: #4e4444;
+      margin-top: 4rem;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      color: white;
+    }
+
+    .footer > div {
+      margin: 10px;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .text-center {
+      text-align: center;
+      padding: 12px;
+      color: #aaa;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .firstsection {
+        flex-direction: column;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .box {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .vertical {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .leftsection {
+        font-size: 2rem;
+      }
+
+      .btn {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="left">My Portfolio</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="firstsection">
+    <div class="leftsection">
+      Hi, I'm a <span class="purple">Frontend Developer</span><br>
+      <button class="btn">Contact Me</button>
+    </div>
+    <div class="rightsection">
+      <img src="hero-image.webp" alt="Developer Image">
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="secondsection">
+    <h1>What I Do</h1>
+    <div class="box">
+      <div class="vertical">
+        <img class="top" src="download.png" alt="HTML">
+        <div class="vertical-title">HTML Developer</div>
+        <div class="vertical-dis">
+          Skilled in creating structured and semantic web pages using HTML5.
+        </div>
+      </div>
+      <div class="vertical">
+        <img class="top" src="download.png" alt="CSS">
+        <div class="vertical-title">CSS Developer</div>
+        <div class="vertical-dis">
+          Expert in building responsive layouts with Flexbox, Grid, and animations.
+        </div>
+      </div>
+      <div class="vertical">
+        <img class="top" src="download.png" alt="JS">
+        <div class="vertical-title">JS Developer</div>
+        <div class="vertical-dis">
+          Proficient in ES6+, DOM, and dynamic UI interaction using JavaScript.
+        </div>
+      </div>
+      <div class="vertical">
+        <img class="top" src="download.png" alt="React">
+        <div class="vertical-title">React Developer</div>
+        <div class="vertical-dis">
+          Experienced in creating single-page apps with React, Hooks & APIs.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: example@mail.com</li>
+          <li>Phone: 123-456-7890</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center">© 2025 My Portfolio</div>
+  </footer>
+
+</body>
+</html>
